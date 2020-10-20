@@ -1,19 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Todo from "./components/Todo";
+import { BrowserRouter as Router } from "react-router-dom";
+import Nav from "./components/Nav";
 import "./index.css";
 
 const App = () => {
   return (
     <div className="App">
-      <Todo />
+      <Nav />
     </div>
   );
 };
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
