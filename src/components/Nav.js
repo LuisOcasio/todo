@@ -11,6 +11,7 @@ const Nav = () => {
           <NavLinks>
             <Link to="/register">Register</Link>
             <Link to="/login">Login</Link>
+            <Link href="https://web20dayones-todo-development.herokuapp.com//auth/google">Sign In with Google</Link>
           </NavLinks>
         </NavBar>
       </ul>
