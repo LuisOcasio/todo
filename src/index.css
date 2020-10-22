@@ -38,4 +38,7 @@ html {
 
 body {
   height: 100%;
+  background-color: #7400b8;
+  color: #fff;
+  font-family: "Staatliches", cursive;
 }
