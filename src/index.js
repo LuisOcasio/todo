@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Landing, Registration } from "./pages/index";
 import "./index.css";
+import { StateProvider } from "./state/index";
 import Nav from "./components/Nav";
 
 const App = () => {
@@ -18,7 +19,9 @@ const App = () => {
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <StateProvider>
+        <App />
+      </StateProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById("root")
