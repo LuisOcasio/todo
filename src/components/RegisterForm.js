@@ -1,34 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
+import axiosWithAuth from "../utils/axiosWithAuth";
 import { useForm } from "react-hook-form";
 import styled from "styled-components";
 
 const RegisterForm = () => {
+  const [input, setInput] = useState({
+    email: "",
+    first: "",
+    last: "",
+    password: "",
+  });
+
   const { register, handleSubmit, errors } = useForm();
 
+  const signup = () => {
+    axiosWithAuth()
+      .post("/register", {
+        ...input,
+      })
+      .then((response) => {
+        console.log(response, "succesful registration");
+      })
+      .catch((error) => {
+        console.log(error, "something went wrong");
+      });
+  };
+
+  const handleChange = (e) => {
+    setInput({
+      ...input,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   const onSubmit = (e) => {
-    console.log("on submit", e);
+    e.preventDefault();
+    signup(input);
   };
 
   return (
     <FormWrapper onSubmit={handleSubmit(onSubmit)}>
       <Input
         text="text"
-        Form
-        name="first-name"
+        name="first"
         placeholder="name"
+        value={input.first}
+        onChange={handleChange}
         ref={register}
       />
       <Input
         text="text"
-        name="last-name"
+        name="last"
         placeholder="last name"
+        value={input.last}
+        onChange={handleChange}
         ref={register}
       />
-      <Input text="text" name="email" placeholder="email" ref={register} />
+      <Input
+        text="text"
+        name="email"
+        placeholder="email"
+        value={input.email}
+        onChange={handleChange}
+        ref={register}
+      />
       <Input
         text="text"
         name="password"
         placeholder="password"
+        value={input.password}
+        onChange={handleChange}
         ref={register({
           required: "please enter a password",
           minLength: { value: 8, message: "password must be 8 characters" },
@@ -36,7 +77,9 @@ const RegisterForm = () => {
       />
       {errors.password && <span>{errors.password.message}</span>}
 
-      <Button type="submit">Sign Up</Button>
+      <Button type="submit" onClick={onSubmit}>
+        Sign Up
+      </Button>
     </FormWrapper>
   );
 };
