@@ -8,6 +8,8 @@ const RegisterForm = () => {
     email: "",
     first: "",
     last: "",
+    address: "",
+    phone: "",
     password: "",
   });
 
@@ -43,7 +45,7 @@ const RegisterForm = () => {
       <Input
         text="text"
         name="first"
-        placeholder="name"
+        placeholder="first name"
         value={input.first}
         onChange={handleChange}
         ref={register}
@@ -61,6 +63,22 @@ const RegisterForm = () => {
         name="email"
         placeholder="email"
         value={input.email}
+        onChange={handleChange}
+        ref={register}
+      />
+      <Input
+        text="text"
+        name="address"
+        placeholder="address"
+        value={input.address}
+        onChange={handleChange}
+        ref={register}
+      />
+      <Input
+        text="text"
+        name="phone"
+        placeholder="phone"
+        value={input.phone}
         onChange={handleChange}
         ref={register}
       />
