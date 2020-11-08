@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 const RegisterForm = () => {
   const [input, setInput] = useState({
+    firstName: "",
+    lastName: "",
     email: "",
-    first: "",
-    last: "",
-    address: "",
     phone: "",
+    address: "",
     password: "",
   });
 
@@ -44,7 +44,7 @@ const RegisterForm = () => {
     <FormWrapper onSubmit={handleSubmit(onSubmit)}>
       <Input
         text="text"
-        name="first"
+        name="firstName"
         placeholder="first name"
         value={input.first}
         onChange={handleChange}
@@ -52,7 +52,7 @@ const RegisterForm = () => {
       />
       <Input
         text="text"
-        name="last"
+        name="lastName"
         placeholder="last name"
         value={input.last}
         onChange={handleChange}
@@ -68,17 +68,17 @@ const RegisterForm = () => {
       />
       <Input
         text="text"
-        name="address"
-        placeholder="address"
-        value={input.address}
+        name="phone"
+        placeholder="phone"
+        value={input.phone}
         onChange={handleChange}
         ref={register}
       />
       <Input
         text="text"
-        name="phone"
-        placeholder="phone"
-        value={input.phone}
+        name="address"
+        placeholder="address"
+        value={input.address}
         onChange={handleChange}
         ref={register}
       />
