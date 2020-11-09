@@ -4,7 +4,7 @@ const axiosWithAuth = () => {
   const token = localStorage.getItem("token");
 
   return axios.create({
-    baseURL: "https://web20dayones-todo-development.herokuapp.com",
+    baseURL: "https://friendly-ritchie-5a999e.netlify.app/",
     headers: {
       Authorization: token,
       "Content-Type": "application/json",
