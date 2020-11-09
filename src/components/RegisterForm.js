@@ -20,9 +20,7 @@ const RegisterForm = () => {
       .post("/register", {
         ...input,
       })
-      .then((response) => {
-        console.log(response, "succesful registration");
-      })
+    
       .catch((error) => {
         console.log(error, "something went wrong");
       });
