@@ -1,11 +1,19 @@
 import React from "react";
+import styled from "styled-components";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 const landing = () => {
   return (
-    <div>
-      <h1>Landing Page</h1>
-    </div>
+    <Wrapper>
+      <Nav />
+      <Footer />
+    </Wrapper>
   );
 };
 
 export default landing;
+
+const Wrapper = styled.div`
+  min-height: 100vh;
+`;
