@@ -7,21 +7,18 @@ const Nav = () => {
     <NavBar>
       <UL>
         <LI>
-          <Link to="/">Home</Link>
-          <Link to="/register">Register</Link>
-          <Link to="/login">Login</Link>
-          <a
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://web20dayones-todo-development.herokuapp.com/auth/google"
-          >
-            Sign In with Google
-          </a>
+          <Link to="/">MENU</Link>
+          <Link to="/">LOCATIONS</Link>
+          <Link to="/">GIFT CARDS</Link>
+          <Link to="/">ORDER ONLINE</Link>
+          <Link to="/">SIGN IN</Link>
         </LI>
       </UL>
     </NavBar>
   );
 };
+
+export default Nav;
 
 const NavBar = styled.nav`
   border-bottom: 1px solid grey;
@@ -29,18 +26,22 @@ const NavBar = styled.nav`
   padding: 0 1em;
   display: flex;
   justify-content: space-between;
-  height: 5rem;
+  height: 2.75rem;
   align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #a0d8db;
 `;
 
 const UL = styled.ul`
-  width: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const LI = styled.li`
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  color: #c82d35;
+  width: 75%;
 `;
-
-export default Nav;
