@@ -13,7 +13,7 @@ const RegisterForm = () => {
     password: "",
   });
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
 
   const signup = () => {
     axiosWithAuth()
