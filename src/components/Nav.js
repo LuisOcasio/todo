@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import LocationModel from "./LocationModel";
 
 const Nav = () => {
   return (
@@ -8,10 +9,15 @@ const Nav = () => {
       <UL>
         <LI>
           <Link to="/">MENU</Link>
-          <Link to="/">LOCATIONS</Link>
+          <Link component={LocationModel} />
           <Link to="/">GIFT CARDS</Link>
           <Link to="/">ORDER ONLINE</Link>
           <Link to="/">SIGN IN</Link>
+          <SignupWrapper>
+            <Link>
+              <p>SIGN UP</p>
+            </Link>
+          </SignupWrapper>
         </LI>
       </UL>
     </NavBar>
@@ -44,4 +50,14 @@ const LI = styled.li`
   justify-content: space-evenly;
   color: #c82d35;
   width: 75%;
+  align-items: center;
+`;
+
+const SignupWrapper = styled.button`
+  width: 15%;
+  background-color: #c82d35;
+  border: 3px solid #1e3453;
+  border-radius: 25.5px;
+  font-family: "Ribeye", cursive;
+  color: #fff;
 `;
