@@ -81,18 +81,6 @@ const RegisterForm = () => {
           onChange={handleChange}
           ref={register}
         />
-        <Input
-          text="text"
-          name="password"
-          placeholder="password"
-          value={input.password}
-          onChange={handleChange}
-          ref={register({
-            required: "please enter a password",
-            minLength: { value: 8, message: "password must be 8 characters" },
-          })}
-        />
-        {errors.password && <span>{errors.password.message}</span>}
       </Form>
 
       <ButtonWrapper>
