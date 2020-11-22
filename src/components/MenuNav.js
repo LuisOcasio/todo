@@ -32,3 +32,5 @@ const NavBar = styled.nav`
   width: 100%;
   align-items: center;
 `;
+
+////////////
