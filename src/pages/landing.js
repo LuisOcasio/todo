@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Nav from "../components/Nav";
-import MenuNav from "../components/MenuNav"
+import MenuNav from "../components/MenuNav";
+import Items from "../components/Items";
 import Footer from "../components/Footer";
 
 const landing = () => {
@@ -9,6 +10,7 @@ const landing = () => {
     <Wrapper>
       <Nav />
       <MenuNav />
+      <Items />
       <Footer />
     </Wrapper>
   );

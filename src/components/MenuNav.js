@@ -19,7 +19,6 @@ export default MenuNav;
 
 const NavBar = styled.nav`
   font-weight: 300;
-  padding: 0 1em;
   display: flex;
   height: 45px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -32,5 +31,3 @@ const NavBar = styled.nav`
   width: 100%;
   align-items: center;
 `;
-
-////////////
