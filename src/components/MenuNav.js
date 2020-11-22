@@ -8,7 +8,7 @@ const MenuNav = () => {
       <Link to="/">BREAKFAST</Link>
       <Link to="/">ENTREES</Link>
       <Link to="/">SALADS</Link>
-      <Link to="/">KIDS MEALS</Link>
+      <Link to="/">KID'S MEALS</Link>
       <Link to="/">DRINKS</Link>
       <Link to="/">DIPPING SAUCES AND DRESSINGS</Link>
     </NavBar>
