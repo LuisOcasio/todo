@@ -93,15 +93,13 @@ const RegisterForm = () => {
 };
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: space-between;
 `;
 
 const Form = styled.form`
-  width: 50%;
-  height: 70%;
+  width: 31.5rem;
+  height: 15rem;
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -110,21 +108,18 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
-  width: 48%;
-  height: 15.5%;
+  width: 15rem;
+  height: 2.5rem;
   border-radius: 2rem;
   background-color: #eafff9;
   text-align: center;
 `;
 
-const ButtonWrapper = styled.div`
-  width: 42.5%;
-  height: 70%;
-`;
+const ButtonWrapper = styled.div``;
 
 const Button = styled.button`
-  width: 50%;
-  height: 15.5%;
+  width: 15rem;
+  height: 2.5rem;
   border-radius: 5px;
   text-align: center;
   border-radius: 2rem;

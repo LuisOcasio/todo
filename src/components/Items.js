@@ -24,21 +24,52 @@ const Items = () => {
       <Card>
         <Img src={cheeseFries} alt="cheese fries" />
       </Card>
+
+      <Card>
+        <Img src={burger} alt="hamburger" />
+      </Card>
+
+      <Card>
+        <Img src={hotdog} alt="hotdog" />
+      </Card>
+
+      <Card>
+        <Img src={fries} alt="french fries" />
+      </Card>
+
+      <Card>
+        <Img src={cheeseFries} alt="cheese fries" />
+      </Card>
+
+      <Card>
+        <Img src={burger} alt="hamburger" />
+      </Card>
+
+      <Card>
+        <Img src={hotdog} alt="hotdog" />
+      </Card>
+
+      <Card>
+        <Img src={fries} alt="french fries" />
+      </Card>
+
+      <Card>
+        <Img src={cheeseFries} alt="cheese fries" />
+      </Card>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.div`
-  width: 100%;
-  height: 35rem;
   background-color: #a0d8db;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 `;
 
 const Img = styled.img`
-  width: 95.5%;
-  height: 75%;
+  width: 10rem;
+  height: 10rem;
 `;
 
 export default Items;
