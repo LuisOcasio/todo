@@ -27,9 +27,7 @@ const Nav = () => {
 export default Nav;
 
 const NavBar = styled.nav`
-  
   font-weight: 300;
-  padding: 0 1em;
   display: flex;
   justify-content: flex;
   height: 2.99rem;
@@ -38,7 +36,7 @@ const NavBar = styled.nav`
   background-color: #a0d8db;
   position: relative;
   z-index: 11;
-  width: 100%
+  width: 100%;
 `;
 
 const UL = styled.ul`
