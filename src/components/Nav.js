@@ -27,15 +27,18 @@ const Nav = () => {
 export default Nav;
 
 const NavBar = styled.nav`
-  border-bottom: 1px solid grey;
+  
   font-weight: 300;
   padding: 0 1em;
   display: flex;
-  justify-content: space-between;
-  height: 2.75rem;
+  justify-content: flex;
+  height: 2.99rem;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;
+  position: relative;
+  z-index: 11;
+  width: 100%
 `;
 
 const UL = styled.ul`
@@ -49,15 +52,19 @@ const LI = styled.li`
   display: flex;
   justify-content: space-evenly;
   color: #c82d35;
-  width: 75%;
+  width: 100%;
   align-items: center;
 `;
 
 const SignupWrapper = styled.button`
-  width: 15%;
+  display: flex;
+  width: 96px;
+  height: 25px;
+  justify-content: space-evenly;
   background-color: #c82d35;
   border: 3px solid #1e3453;
   border-radius: 25.5px;
   font-family: "Ribeye", cursive;
   color: #fff;
+  align-items: center;
 `;
