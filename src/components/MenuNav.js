@@ -2,21 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-
 const MenuNav = () => {
-    return (
-        <NavBar>
-          
-            <Link to="/">BREAKFAST</Link>
-            <Link to="/">ENTREES</Link> 
-            <Link to="/">SALADS</Link>
-            <Link to="/">KID'S MEALS</Link>
-            <Link to="/">DRINKS</Link>
-            <Link to="/">DIPPING SAUCES AND DRESSINGS</Link>
-          
-      </NavBar>
-    )
-}
+  return (
+    <NavBar>
+      <Link to="/">BREAKFAST</Link>
+      <Link to="/">ENTREES</Link>
+      <Link to="/">SALADS</Link>
+      <Link to="/">KIDS MEALS</Link>
+      <Link to="/">DRINKS</Link>
+      <Link to="/">DIPPING SAUCES AND DRESSINGS</Link>
+    </NavBar>
+  );
+};
 
 export default MenuNav;
 
@@ -35,5 +32,3 @@ const NavBar = styled.nav`
   width: 100%;
   align-items: center;
 `;
-
-
