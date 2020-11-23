@@ -1,8 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
 
 const LocationModal = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <Modal

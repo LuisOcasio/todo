@@ -1,9 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
 import cart from "../images/cart.png";
 
 const CartModal = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <Modal

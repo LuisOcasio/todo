@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import Card from "../components/Card";
 import burger from "../images/burger.png";
