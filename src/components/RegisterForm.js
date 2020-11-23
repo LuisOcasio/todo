@@ -85,7 +85,7 @@ const RegisterForm = () => {
 
       <ButtonWrapper>
         <Button type="submit" onClick={onSubmit}>
-          <h5>SIGN UP</h5>
+          SIGN UP
         </Button>
       </ButtonWrapper>
     </Wrapper>
@@ -113,6 +113,7 @@ const Input = styled.input`
   border-radius: 2rem;
   background-color: #eafff9;
   text-align: center;
+  font-family: "Ribeye", cursive;
 `;
 
 const ButtonWrapper = styled.div``;
