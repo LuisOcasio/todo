@@ -62,9 +62,9 @@ const Items = () => {
 
 const Wrapper = styled.div`
   background-color: #a0d8db;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
 `;
 
 const Img = styled.img`

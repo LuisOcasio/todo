@@ -25,4 +25,5 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   color: #fff;
   margin-left: 1rem;
+  font-family: "Ribeye", cursive;
 `;
