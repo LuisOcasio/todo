@@ -1,7 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LocationModel from "./LocationModel";
+import LocationModal from "../Modals/LocationModal";
+import CartModal from "../Modals/CartModal";
 
 const Nav = () => {
   return (
@@ -9,15 +9,14 @@ const Nav = () => {
       <UL>
         <LI>
           <Link to="/">MENU</Link>
-          <Link component={LocationModel} />
+          <Link to="/" component={LocationModal} />
           <Link to="/">GIFT CARDS</Link>
           <Link to="/">ORDER ONLINE</Link>
           <Link to="/">SIGN IN</Link>
           <SignupWrapper>
-            <Link>
-              <p>SIGN UP</p>
-            </Link>
+            <Link to="/">SIGN UP</Link>
           </SignupWrapper>
+          <Link to="/" component={CartModal} />
         </LI>
       </UL>
     </NavBar>
@@ -27,16 +26,20 @@ const Nav = () => {
 export default Nav;
 
 const NavBar = styled.nav`
-  
   font-weight: 300;
   display: flex;
+<<<<<<< HEAD
   height: 50px;;
+=======
+  justify-content: flex;
+  height: 3rem;
+>>>>>>> 1e1d52ea3c7066ac1f89f90fb4d767c115b048c5
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;
   position: relative;
   z-index: 11;
-  width: 100%
+  width: 100%;
 `;
 
 const UL = styled.ul`
@@ -56,12 +59,11 @@ const LI = styled.li`
 
 const SignupWrapper = styled.button`
   display: flex;
-  width: 96px;
-  height: 25px;
+  width: 7rem;
   justify-content: space-evenly;
   background-color: #c82d35;
   border: 3px solid #1e3453;
-  border-radius: 25.5px;
+  border-radius: 2rem;
   font-family: "Ribeye", cursive;
   color: #fff;
   align-items: center;

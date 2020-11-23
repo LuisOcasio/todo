@@ -1,7 +1,8 @@
-import React from "react";
+import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Landing, Registration } from "./pages/index";
+import "semantic-ui-css/semantic.min.css";
 import "./index.css";
 
 const App = () => {
@@ -14,10 +15,10 @@ const App = () => {
 };
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StrictMode>
     <Router>
       <App />
     </Router>
-  </React.StrictMode>,
+  </StrictMode>,
   document.getElementById("root")
 );

@@ -1,4 +1,3 @@
-import React from "react";
 import RegisterForm from "./RegisterForm";
 import styled from "styled-components";
 
@@ -15,7 +14,7 @@ export default Footer;
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 341px;
+  height: 21.5rem;
   background-color: #487698;
   position: fixed;
   bottom: 0;
@@ -25,5 +24,5 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   color: #fff;
   margin-left: 1rem;
-  margin-top: 1rem;
+  font-family: "Ribeye", cursive;
 `;
