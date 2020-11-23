@@ -19,9 +19,8 @@ export default MenuNav;
 
 const NavBar = styled.nav`
   font-weight: 300;
-  
   display: flex;
-  height: 45px;
+  height: 50px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;
   position: relative;
