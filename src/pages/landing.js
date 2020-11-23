@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const landing = () => {
   return (
-    <Wrapper>
+    <Wrapper className="wrapper">
       <Nav />
       <MenuNav />
       <Footer />
