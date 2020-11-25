@@ -28,7 +28,7 @@ export default Nav;
 const NavBar = styled.nav`
   font-weight: 300;
   display: flex;
-  height: 50px;;
+  height: 50px;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;

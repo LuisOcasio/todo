@@ -21,4 +21,6 @@ export default landing;
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
 `;
