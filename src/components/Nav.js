@@ -28,12 +28,7 @@ export default Nav;
 const NavBar = styled.nav`
   font-weight: 300;
   display: flex;
-<<<<<<< HEAD
   height: 50px;;
-=======
-  justify-content: flex;
-  height: 3rem;
->>>>>>> 1e1d52ea3c7066ac1f89f90fb4d767c115b048c5
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;
