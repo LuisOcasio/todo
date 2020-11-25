@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LocationModal from "../Modals/LocationModal";
-import CartModal from "../Modals/CartModal";
+import LocationModal from "../modals/LocationModal";
+import CartModal from "../modals/CartModal";
 
 const Nav = () => {
   return (

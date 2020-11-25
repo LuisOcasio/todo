@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Button, Header, Icon, Modal } from "semantic-ui-react";
+import styled from "styled-components";
+import { Header, Modal } from "semantic-ui-react";
 import cart from "../images/cart.png";
 
 const CartModal = () => {
@@ -7,43 +8,149 @@ const CartModal = () => {
 
   return (
     <Modal
-      style={{ width: "30rem", height: "40rem" }}
+      id="modal"
+      style={{
+        width: "23rem",
+        height: "35rem",
+        top: "0",
+        right: "0",
+        background: "#487698",
+        overflowY: "auto",
+      }}
       closeIcon
       open={open}
       trigger={
-        <Button
+        <button
           style={{
             background: "none",
           }}
         >
           <img src={cart} alt="shopping cart" style={{ width: "2rem" }} />
-        </Button>
+        </button>
       }
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
     >
       <Header
-        icon="shopping cart"
-        style={{ fontFamily: "Ribeye, cursive" }}
-        content="CONFIRM PICK UP DETAILS"
-      />
-      <Modal.Content style={{ fontFamily: "Ribeye, cursive" }}>
-        <p>RESTAURANT ADDRESS</p>
+        style={{
+          fontFamily: "Ribeye, cursive",
+          background: "#C82D35",
+          color: "#fff",
+        }}
+      >
+        <p>MY ORDER(ITEMS)</p>
+      </Header>
+
+      <Modal.Content
+        style={{
+          fontFamily: "Ribeye, cursive",
+          background: "#487698",
+          height: "100%",
+          color: "#fff",
+          fontSize: "1rem",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "flex-end",
+        }}
+      >
+        <TotalWrapper>
+          <CouponSection>
+            <p>COUPON CODE</p>
+
+            <InputWrapper>
+              <Input type="text" placeholder="COUPON CODE" />
+              <InputButton
+                type="submit"
+                value="APPLY"
+                style={{ fontFamily: "Ribeye,cursive" }}
+              />
+            </InputWrapper>
+
+            <FinePrint>Only one coupon allowed per order</FinePrint>
+          </CouponSection>
+          <TotalSection>
+            <p>ESTIAMATED TOTAL: $</p>
+          </TotalSection>
+        </TotalWrapper>
       </Modal.Content>
-      <Modal.Actions style={{ display: "flex", justifyContent: "center" }}>
-        <Button
+
+      <Modal.Actions
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          background: "#487698",
+          borderTop: "none",
+        }}
+      >
+        <button
           style={{
-            backgroundColor: "#c82d35",
+            borderRadius: "25.5px",
+            background: "#C82D35",
             color: "#fff",
-            fontFamily: "Ribeye, cursive",
+            width: "10rem",
+            height: "2.5rem",
+            fontFamily: "Ribeye ,cursive",
+            border: "3px solid #1E3453",
           }}
           onClick={() => setOpen(false)}
         >
-          <Icon name="checkmark" /> CONFIRM
-        </Button>
+          Checkout
+        </button>
       </Modal.Actions>
     </Modal>
   );
 };
+
+const TotalWrapper = styled.div`
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+const CouponSection = styled.div`
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 7rem;
+`;
+
+const Input = styled.input`
+  height: 2rem;
+  width: 7rem;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  font-family: "Ribeye", cursive;
+  font-size: 0.75rem;
+  text-align: center;
+  border: 1px solid #c82d35;
+`;
+
+const InputWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const InputButton = styled.input`
+  height: 2rem;
+  width: 5rem;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #c82d35;
+  color: #fff;
+`;
+
+const FinePrint = styled.p`
+  font-size: 0.75em;
+`;
+
+const TotalSection = styled.div`
+  width: 100%;
+  text-align: left;
+`;
 
 export default CartModal;
