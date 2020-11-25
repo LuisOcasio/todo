@@ -5,14 +5,15 @@ import Items from "../components/Items";
 import Footer from "../components/Footer";
 import Flag from "../components/Flag";
 
+
 const landing = () => {
   return (
-    <Wrapper className="wrapper">
+    <Wrapper >
       <Nav />
       <MenuNav />
       <Flag />
       <Items />
-      <Footer />
+      <Footer /> 
     </Wrapper>
   );
 };

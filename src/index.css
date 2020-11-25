@@ -1,4 +1,4 @@
-* {
+ * {
   margin: 0;
   padding: 0;
   border: 0;
@@ -41,10 +41,9 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   color: #000;
   font-family: "Ribeye", cursive;
-  background-color: #c82d35;
-  overflow-y: scroll;
 }
 
-#modal::-webkit-scrollbar-thumb {
-  background-color: #c82d35;
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
 }

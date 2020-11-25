@@ -28,8 +28,7 @@ export default Nav;
 const NavBar = styled.nav`
   font-weight: 300;
   display: flex;
-  justify-content: flex;
-  height: 3rem;
+  height: 50px;;
   align-items: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #a0d8db;
@@ -47,9 +46,9 @@ const UL = styled.ul`
 const LI = styled.li`
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: #c82d35;
-  width: 100%;
+  width: 65%;
   align-items: center;
 `;
 
