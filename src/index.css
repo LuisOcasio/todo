@@ -172,3 +172,24 @@ body {
   color: #000;
   font-family: "Ribeye", cursive;
 }
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #a0d8db;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #c82d35;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+#modal::-webkit-scrollbar-thumb {
+  background: #c82d35;
+}
