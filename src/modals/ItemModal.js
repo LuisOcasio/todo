@@ -5,13 +5,8 @@ import Extras from "../components/dropdowns/Extras.js";
 import RemoveFrom from "../components/dropdowns/Remove.js";
 import burger from "../images/burger.png";
 
-function ModalExampleCloseIcon() {
+const ItemModal = () => {
   const [open, setOpen] = useState(false);
-
-  // switch (){
-  //   case:
-  // }
-  //
 
   return (
     <Modal
@@ -19,7 +14,7 @@ function ModalExampleCloseIcon() {
         width: "22.5rem",
         height: "40rem",
         background: "#A0D8DB",
-        borderRadius: "10rem",
+        borderRadius: "2rem",
       }}
       closeIcon
       open={open}
@@ -35,6 +30,7 @@ function ModalExampleCloseIcon() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "space-evenly",
+          borderRadius: "2rem",
         }}
       >
         <img
@@ -66,7 +62,7 @@ function ModalExampleCloseIcon() {
       </Modal.Content>
     </Modal>
   );
-}
+};
 
 const ButtonWrapper = styled.button`
   background-color: #1e3453;
@@ -77,4 +73,4 @@ const ButtonWrapper = styled.button`
   font-family: "Ribeye", cursive;
 `;
 
-export default ModalExampleCloseIcon;
+export default ItemModal;

@@ -16,8 +16,9 @@ const CartModal = () => {
         right: "0",
         background: "#487698",
         overflowY: "auto",
+        borderTopLeftRadius: "2.5rem",
+        borderBottomLeftRadius: "2.5rem",
       }}
-      closeIcon
       open={open}
       trigger={
         <button
@@ -70,7 +71,7 @@ const CartModal = () => {
             <FinePrint>Only one coupon allowed per order</FinePrint>
           </CouponSection>
           <TotalSection>
-            <p>ESTIAMATED TOTAL: $</p>
+            <p>ESTIAMATED TOTAL: $0.00</p>
           </TotalSection>
         </TotalWrapper>
       </Modal.Content>
@@ -81,8 +82,24 @@ const CartModal = () => {
           justifyContent: "center",
           background: "#487698",
           borderTop: "none",
+          padding: "0px 0px",
         }}
       >
+        <button
+          style={{
+            borderRadius: "25.5px",
+            color: "#fff",
+            width: "10rem",
+            height: "2.5rem",
+            fontFamily: "Ribeye ,cursive",
+            background: "#1E3453",
+            border: "3px solid #C82D35",
+          }}
+          onClick={() => setOpen(false)}
+        >
+          BACK TO MENU
+        </button>
+
         <button
           style={{
             borderRadius: "25.5px",
@@ -93,9 +110,8 @@ const CartModal = () => {
             fontFamily: "Ribeye ,cursive",
             border: "3px solid #1E3453",
           }}
-          onClick={() => setOpen(false)}
         >
-          Checkout
+          CHECKOUT
         </button>
       </Modal.Actions>
     </Modal>
