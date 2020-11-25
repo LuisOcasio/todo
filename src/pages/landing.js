@@ -3,12 +3,14 @@ import Nav from "../components/Nav";
 import MenuNav from "../components/MenuNav";
 import Items from "../components/Items";
 import Footer from "../components/Footer";
+import Flag from "../components/Flag";
 
 const landing = () => {
   return (
-    <Wrapper>
+    <Wrapper className="wrapper">
       <Nav />
       <MenuNav />
+      <Flag />
       <Items />
       <Footer />
     </Wrapper>
