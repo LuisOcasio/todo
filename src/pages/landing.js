@@ -5,15 +5,14 @@ import Items from "../components/Items";
 import Footer from "../components/Footer";
 import Flag from "../components/Flag";
 
-
 const landing = () => {
   return (
-    <Wrapper >
+    <Wrapper>
       <Nav />
       <MenuNav />
       <Flag />
       <Items />
-      <Footer /> 
+      <Footer />
     </Wrapper>
   );
 };
@@ -22,4 +21,6 @@ export default landing;
 
 const Wrapper = styled.div`
   min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
 `;
