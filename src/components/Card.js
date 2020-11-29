@@ -1,14 +1,9 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import ItemModal from "../modals/ItemModal";
+
+//pass food details into item modal component
 
 const Card = (props) => {
-  return (
-    <Wrapper>
-      {props.children}
-      <Link to="/" component={ItemModal} />
-    </Wrapper>
-  );
+  return <Wrapper>{props.children}</Wrapper>;
 };
 
 const Wrapper = styled.div`

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { Header, Modal } from "semantic-ui-react";
-import cart from "../images/cart.png";
+import cart from "../../images/cart.png";
 
 const CartModal = () => {
   const [open, setOpen] = useState(false);

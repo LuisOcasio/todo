@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Modal } from "semantic-ui-react";
 import styled from "styled-components";
-import Extras from "../components/dropdowns/Extras.js";
-import RemoveFrom from "../components/dropdowns/Remove.js";
-import burger from "../images/burger.png";
+import Extras from "../dropdowns/Extras.js";
+import Remove from "../dropdowns/Remove.js";
+import { options } from "../../data/index.js";
 
-const ItemModal = () => {
+const title = Object.keys(options);
+
+const ItemModal = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,6 +20,7 @@ const ItemModal = () => {
       }}
       closeIcon
       open={open}
+      /* customize button needs value of item*/
       trigger={<ButtonWrapper>CUSTOMIZE</ButtonWrapper>}
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
@@ -34,15 +37,16 @@ const ItemModal = () => {
         }}
       >
         <img
-          src={burger}
-          alt="burger"
+          src={props.menuItems}
+          alt="fast food items"
           style={{ width: "10rem", height: "10rem" }}
         />
-        <p>THE ULTIMATE BURGER</p>
 
-        <Extras />
+        <p>THE ULTIMATE {title[props.slot]}</p>
+
+        <Extras slot={props.slot} />
         <br />
-        <RemoveFrom />
+        <Remove slot={props.slot} />
 
         <Modal.Actions>
           <button

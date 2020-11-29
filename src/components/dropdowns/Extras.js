@@ -1,28 +1,26 @@
 import { Dropdown } from "semantic-ui-react";
+import { options } from "../../data/index.js";
 
-const burgerOptions = [
-  { key: "lettuce", text: "Lettuce", value: "lettuce" },
-  { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
-  { key: "bacon", text: "Bacon", value: "bacon" },
-  { key: "mayo", text: "Mayo", value: "mayo" },
-  { key: "cheese", text: "Cheese", value: "cheese" },
-  { key: "pickles", text: "Pickles", value: "pickles" },
-];
+const list = Object.values(options).map((e) => {
+  return e;
+});
 
-const Extras = () => (
-  <Dropdown
-    style={{
-      textAlign: "center",
-      background: "#1E3453",
-      color: "#C82D35",
-      width: "100%",
-    }}
-    placeholder="ADD EXTRAS"
-    fluid
-    multiple
-    selection
-    options={burgerOptions}
-  />
-);
+const Extras = (props) => {
+  return (
+    <Dropdown
+      style={{
+        textAlign: "center",
+        background: "#1E3453",
+        color: "#C82D35",
+        width: "100%",
+      }}
+      placeholder="ADD EXTRAS"
+      fluid
+      multiple
+      selection
+      options={list[props.slot]}
+    />
+  );
+};
 
 export default Extras;

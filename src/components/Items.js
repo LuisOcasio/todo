@@ -4,57 +4,21 @@ import burger from "../images/burger.png";
 import hotdog from "../images/hot-dog.png";
 import fries from "../images/fries.png";
 import cheeseFries from "../images/cheese-fries.png";
+import ItemModal from "./modals/ItemModal.js";
+
+const foodImages = [burger, hotdog, fries, cheeseFries];
 
 const Items = () => {
   return (
     <Wrapper>
-      <Card>
-        <Img src={burger} alt="hamburger" />
-      </Card>
-
-      <Card>
-        <Img src={hotdog} alt="hotdog" />
-      </Card>
-
-      <Card>
-        <Img src={fries} alt="french fries" />
-      </Card>
-
-      <Card>
-        <Img src={cheeseFries} alt="cheese fries" />
-      </Card>
-
-      <Card>
-        <Img src={burger} alt="hamburger" />
-      </Card>
-
-      <Card>
-        <Img src={hotdog} alt="hotdog" />
-      </Card>
-
-      <Card>
-        <Img src={fries} alt="french fries" />
-      </Card>
-
-      <Card>
-        <Img src={cheeseFries} alt="cheese fries" />
-      </Card>
-
-      <Card>
-        <Img src={burger} alt="hamburger" />
-      </Card>
-
-      <Card>
-        <Img src={hotdog} alt="hotdog" />
-      </Card>
-
-      <Card>
-        <Img src={fries} alt="french fries" />
-      </Card>
-
-      <Card>
-        <Img src={cheeseFries} alt="cheese fries" />
-      </Card>
+      {foodImages.map((item, index) => {
+        return (
+          <Card key={item}>
+            <Img src={item} alt="food items" />
+            <ItemModal menuItems={item} slot={index} />
+          </Card>
+        );
+      })}
     </Wrapper>
   );
 };
