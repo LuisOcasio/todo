@@ -1,12 +1,9 @@
 import styled from "styled-components";
 import Card from "../components/Card";
-import burger from "../images/burger.png";
-import hotdog from "../images/hot-dog.png";
-import fries from "../images/fries.png";
-import cheeseFries from "../images/cheese-fries.png";
-import ItemModal from "./modals/ItemModal.js";
+import { Burger, HotDog, Fries, LoadedFries } from "../images/index.js";
+import { ItemModal } from "./modals/index.js";
 
-const foodImages = [burger, hotdog, fries, cheeseFries];
+const foodImages = [Burger, HotDog, Fries, LoadedFries];
 
 const Items = () => {
   return (
