@@ -10,15 +10,16 @@ const LocationModal = () => {
       closeIcon
       open={open}
       trigger={
-        <Button
+        <button
           style={{
             background: "none",
             color: "#c82d35",
             fontFamily: "Ribeye,cursive",
+            cursor: "pointer",
           }}
         >
           LOCATION
-        </Button>
+        </button>
       }
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}

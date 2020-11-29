@@ -1,11 +1,11 @@
-import RegisterForm from "./RegisterForm";
+import RewardsRegister from "./forms/RewardsRegister";
 import styled from "styled-components";
 
 const Footer = () => {
   return (
     <Wrapper>
       <Title>SIGN UP FOR OFFERS AND REWARDS!</Title>
-      <RegisterForm />
+      <RewardsRegister />
     </Wrapper>
   );
 };
