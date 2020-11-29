@@ -3,9 +3,8 @@ import { Modal } from "semantic-ui-react";
 import styled from "styled-components";
 import Extras from "../components/dropdowns/Extras.js";
 import RemoveFrom from "../components/dropdowns/Remove.js";
-import burger from "../images/burger.png";
 
-const ItemModal = () => {
+const ItemModal = (props) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -18,6 +17,7 @@ const ItemModal = () => {
       }}
       closeIcon
       open={open}
+      /* customize button needs value of item*/
       trigger={<ButtonWrapper>CUSTOMIZE</ButtonWrapper>}
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
@@ -34,11 +34,10 @@ const ItemModal = () => {
         }}
       >
         <img
-          src={burger}
-          alt="burger"
+          src={props.menuItems}
+          alt="fast food items"
           style={{ width: "10rem", height: "10rem" }}
         />
-        <p>THE ULTIMATE BURGER</p>
 
         <Extras />
         <br />
