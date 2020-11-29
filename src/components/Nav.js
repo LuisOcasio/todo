@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LocationModal from "../modals/LocationModal.js";
-import CartModal from "../modals/CartModal.js";
+import LocationModal from "./modals/LocationModal.js";
+import CartModal from "./modals/CartModal.js";
 
 const Nav = () => {
   return (
@@ -9,14 +9,14 @@ const Nav = () => {
       <UL>
         <LI>
           <Link to="/">MENU</Link>
-          <Link to="/" component={LocationModal} />
+          <LocationModal />
           <Link to="/">GIFT CARDS</Link>
           <Link to="/">ORDER ONLINE</Link>
           <Link to="/">SIGN IN</Link>
           <SignupWrapper>
             <Link to="/">SIGN UP</Link>
           </SignupWrapper>
-          <Link to="/" component={CartModal} />
+          <CartModal />
         </LI>
       </UL>
     </NavBar>

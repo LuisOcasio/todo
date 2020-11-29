@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { Modal } from "semantic-ui-react";
 import styled from "styled-components";
-import Extras from "../components/dropdowns/Extras.js";
-import RemoveFrom from "../components/dropdowns/Remove.js";
+import Extras from "../dropdowns/Extras.js";
+import Remove from "../dropdowns/Remove.js";
+import { options } from "../../data/index.js";
+
+const title = Object.keys(options);
 
 const ItemModal = (props) => {
   const [open, setOpen] = useState(false);
@@ -39,9 +42,11 @@ const ItemModal = (props) => {
           style={{ width: "10rem", height: "10rem" }}
         />
 
-        <Extras />
+        <p>THE ULTIMATE {title[props.slot]}</p>
+
+        <Extras slot={props.slot} />
         <br />
-        <RemoveFrom />
+        <Remove slot={props.slot} />
 
         <Modal.Actions>
           <button
