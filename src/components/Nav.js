@@ -47,15 +47,3 @@ const LI = styled.li`
   color: #c82d35;
   align-items: center;
 `;
-
-const SignupWrapper = styled.div`
-  display: flex;
-  width: 7rem;
-  justify-content: space-evenly;
-  background-color: #c82d35;
-  border: 3px solid #1e3453;
-  border-radius: 2rem;
-  font-family: "Ribeye", cursive;
-  color: #fff;
-  align-items: center;
-`;
