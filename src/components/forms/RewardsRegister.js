@@ -10,14 +10,13 @@ const RegisterForm = () => {
     email: "",
     phone: "",
     address: "",
-    password: "",
   });
 
   const { register, handleSubmit } = useForm();
 
   const signup = () => {
     axiosWithAuth()
-      .post("/register", {
+      .post("/", {
         ...input,
       })
 
@@ -82,6 +81,10 @@ const RegisterForm = () => {
           ref={register}
         />
       </Form>
+
+      <Button type="submit" onClick={onSubmit}>
+        SIGN UP
+      </Button>
     </Wrapper>
   );
 };
@@ -107,6 +110,20 @@ const Input = styled.input`
   border-radius: 2rem;
   background-color: #eafff9;
   text-align: center;
+  font-family: "Ribeye", cursive;
+`;
+
+const Button = styled.button`
+  width: 15rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  text-align: center;
+  border-radius: 2rem;
+  margin-right: 3rem;
+  background-color: #c82d35;
+  color: #fff;
+  border: 2px solid #000;
+  margin-top: 1.85rem;
   font-family: "Ribeye", cursive;
 `;
 
