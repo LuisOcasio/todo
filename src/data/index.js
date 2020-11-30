@@ -1,5 +1,5 @@
 export const options = {
-  XL_BURGER: [
+  "XL BURGER": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -8,7 +8,7 @@ export const options = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-  XXL_BURGER: [
+  "XXL BURGER": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -17,7 +17,7 @@ export const options = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-  GRILLED_CHICKEN_SANDWHICH: [
+  "GRILLED CHICKEN SANDWHICH": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -26,7 +26,7 @@ export const options = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-  FRIED_CHICKEN_SANDWHICH: [
+  "FRIED CHICKEN SANDWHICH": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -43,13 +43,11 @@ export const options = {
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
     { key: "mustard", text: "Mustard", value: "mustard" },
   ],
-
   FRIES: [
     { key: "salt", text: "Salt", value: "salt" },
     { key: "pepper", text: "Pepper", value: "pepper" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-
   LOADEDFRIES: [
     { key: "jalapenos", text: "Jalapenos", value: "jalapenos" },
     { key: "chilli", text: "Chilli", value: "chilli" },
@@ -67,7 +65,7 @@ export const options = {
 };
 
 export const exclude = {
-  XL_BURGER: [
+  "XL BURGER": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -77,7 +75,7 @@ export const exclude = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-  XXL_BURGER: [
+  "XXL BURGER": [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -87,13 +85,13 @@ export const exclude = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-  GRILLED_CHICKEN_SANDWHICH: [
+  "GRILLED CHICKEN SANDWHICH": [
     { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
     { key: "onions", text: "Onions", value: "onions" },
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "lettuce", text: "Letuce", value: "lettuce" },
   ],
-  FIRED_CHICKEN_SANDWHICH: [
+  "FIRED CHICKEN SANDWHICH": [
     { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
     { key: "onions", text: "Onions", value: "onions" },
     { key: "mayo", text: "Mayo", value: "mayo" },
