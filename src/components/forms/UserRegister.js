@@ -104,6 +104,17 @@ const UserRegister = () => {
       </Form.Field>
 
       <Form.Field>
+        <label>Password</label>
+        <input
+          name="password"
+          placeholder="Password"
+          value={input.password}
+          onChange={handleChange}
+          ref={register}
+        />
+      </Form.Field>
+
+      <Form.Field>
         <Checkbox label="I agree to the Terms and Conditions" />
       </Form.Field>
       <Button type="submit" onClick={onSubmit}>
