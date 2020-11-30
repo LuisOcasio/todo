@@ -4,7 +4,7 @@ import { Icon } from "semantic-ui-react";
 import { Coca } from "../../images/drinks/index.js";
 
 const CartItem = () => {
-  const [price, setPrice] = useState(0);
+  const [price] = useState(0);
   const [quantity, setQuantity] = useState(0);
 
   const addItem = () => {
