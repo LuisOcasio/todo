@@ -1,5 +1,5 @@
 export const options = {
-  BURGER: [
+  XL_BURGER: [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
@@ -8,7 +8,33 @@ export const options = {
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
   ],
-
+  XXL_BURGER: [
+    { key: "bacon", text: "Bacon", value: "bacon" },
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "pickles", text: "Pickles", value: "pickles" },
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
+  GRILLED_CHICKEN_SANDWHICH: [
+    { key: "bacon", text: "Bacon", value: "bacon" },
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "pickles", text: "Pickles", value: "pickles" },
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
+  FRIED_CHICKEN_SANDWHICH: [
+    { key: "bacon", text: "Bacon", value: "bacon" },
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "pickles", text: "Pickles", value: "pickles" },
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
   HOTDOG: [
     { key: "chilli", text: "Chilli", value: "chilli" },
     { key: "onions", text: "Onions", value: "onions" },
@@ -31,17 +57,47 @@ export const options = {
     { key: "nacho cheese", text: "Nacho Cheese", value: "nacho cheese" },
     { key: "ranch", text: "Ranch", value: "ranch" },
   ],
+  CHEESESTEAK: [
+    { key: "bacon", text: "Bacon", value: "bacon" },
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
 };
 
 export const exclude = {
-  BURGER: [
+  XL_BURGER: [
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "cheese", text: "Cheese", value: "cheese" },
     { key: "pickles", text: "Pickles", value: "pickles" },
     { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
     { key: "onions", text: "Onions", value: "onions" },
+    { key: "lettuce", text: "Letuce", value: "lettuce" },
     { key: "mayo", text: "Mayo", value: "mayo" },
     { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
+  XXL_BURGER: [
+    { key: "bacon", text: "Bacon", value: "bacon" },
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "pickles", text: "Pickles", value: "pickles" },
+    { key: "lettuce", text: "Letuce", value: "lettuce" },
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "ketchup", text: "Ketchup", value: "ketchup" },
+  ],
+  GRILLED_CHICKEN_SANDWHICH: [
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "lettuce", text: "Letuce", value: "lettuce" },
+  ],
+  FIRED_CHICKEN_SANDWHICH: [
+    { key: "tomatoes", text: "Tomatoes", value: "tomatoes" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
+    { key: "lettuce", text: "Letuce", value: "lettuce" },
   ],
   HOTDOG: [
     { key: "onions", text: "Onions", value: "onions" },
@@ -57,5 +113,10 @@ export const exclude = {
     { key: "bacon", text: "Bacon", value: "bacon" },
     { key: "nacho cheese", text: "Nacho Cheese", value: "nacho cheese" },
     { key: "ranch", text: "Ranch", value: "ranch" },
+  ],
+  CHEESESTEAK: [
+    { key: "cheese", text: "Cheese", value: "cheese" },
+    { key: "onions", text: "Onions", value: "onions" },
+    { key: "mayo", text: "Mayo", value: "mayo" },
   ],
 };
