@@ -8,7 +8,6 @@ const CartModal = () => {
   const [open, setOpen] = useState(false);
   const [count] = useState("items");
   const [total] = useState(0);
-  const [cartITem] = useState([]);
 
   return (
     <Modal
