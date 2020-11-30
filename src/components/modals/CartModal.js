@@ -2,9 +2,13 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Header, Modal } from "semantic-ui-react";
 import cart from "../../images/cart.png";
+import CartItem from "../items/CartItem";
 
 const CartModal = () => {
   const [open, setOpen] = useState(false);
+  const [count, setCount] = useState("items");
+  const [total, setTotal] = useState(0);
+  const [cartITem, setCartItem] = useState([]);
 
   return (
     <Modal
@@ -39,14 +43,14 @@ const CartModal = () => {
           color: "#fff",
         }}
       >
-        <p>MY ORDER(ITEMS)</p>
+        <p>MY ORDER({count})</p>
       </Header>
 
       <Modal.Content
         style={{
+          height: "80%",
           fontFamily: "Ribeye, cursive",
           background: "#487698",
-          height: "100%",
           color: "#fff",
           fontSize: "1rem",
           display: "flex",
@@ -55,10 +59,11 @@ const CartModal = () => {
           justifyContent: "flex-end",
         }}
       >
+        <CartItem />
+
         <TotalWrapper>
           <CouponSection>
             <p>COUPON CODE</p>
-
             <InputWrapper>
               <Input type="text" placeholder="COUPON CODE" />
               <InputButton
@@ -67,19 +72,17 @@ const CartModal = () => {
                 style={{ fontFamily: "Ribeye,cursive" }}
               />
             </InputWrapper>
-
             <FinePrint>Only one coupon allowed per order</FinePrint>
           </CouponSection>
           <TotalSection>
-            <p>ESTIAMATED TOTAL: $0.00</p>
+            <p>ESTIAMATED TOTAL: ${total}</p>
           </TotalSection>
         </TotalWrapper>
       </Modal.Content>
-
       <Modal.Actions
         style={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "space-around",
           background: "#487698",
           borderTop: "none",
           padding: "0px 0px",
@@ -125,6 +128,7 @@ const TotalWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  border-top: 1px solid red;
 `;
 
 const CouponSection = styled.div`
