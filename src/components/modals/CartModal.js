@@ -6,9 +6,9 @@ import CartItem from "../items/CartItem";
 
 const CartModal = () => {
   const [open, setOpen] = useState(false);
-  const [count, setCount] = useState("items");
-  const [total, setTotal] = useState(0);
-  const [cartITem, setCartItem] = useState([]);
+  const [count] = useState("items");
+  const [total] = useState(0);
+  const [cartITem] = useState([]);
 
   return (
     <Modal
