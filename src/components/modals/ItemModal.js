@@ -34,6 +34,7 @@ const ItemModal = (props) => {
           alignItems: "center",
           justifyContent: "space-evenly",
           borderRadius: "2rem",
+          textAlign: "center",
         }}
       >
         <img
