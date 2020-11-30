@@ -23,7 +23,6 @@ const RegisterModal = () => {
               border: "3px solid #1E3453",
               width: "6rem",
               borderRadius: "3rem",
-              background: "#C82D35",
               color: "#fff",
             }}
           >
