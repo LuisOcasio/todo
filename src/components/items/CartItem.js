@@ -22,9 +22,17 @@ const CartItem = () => {
       <SelectedItem>
         <img src={Coca} alt="menu item" style={{ width: "7rem" }} />
         <p>
-          <Icon onClick={removeItem} name="triangle left" />
-          QTY:{quantity}
-          <Icon onClick={addItem} name="triangle right" />
+          <Icon
+            onClick={removeItem}
+            name="triangle left"
+            style={{ color: "red" }}
+          />
+          QTY: {quantity}
+          <Icon
+            onClick={addItem}
+            name="triangle right"
+            style={{ color: "red" }}
+          />
         </p>
       </SelectedItem>
     </Wrapper>
