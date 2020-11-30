@@ -16,10 +16,13 @@ const RegisterModal = () => {
         trigger={
           <button
             style={{
-              background: "none",
-              color: "#c82d35",
               fontFamily: "Ribeye,cursive",
               cursor: "pointer",
+              border: "3px solid #1E3453",
+              width: "6rem",
+              borderRadius: "3rem",
+              background: "#C82D35",
+              color: "#fff",
             }}
           >
             SIGN UP
