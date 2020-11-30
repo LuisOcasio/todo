@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import {
   Burger,
   DblBurger,
@@ -9,8 +9,8 @@ import {
   CheeseSteak,
   GrilledChickenSandwhich,
   FriedChickenSandwhich,
-} from "../images/index.js";
-import { ItemModal } from "./modals/index.js";
+} from "../../images/index.js";
+import { ItemModal } from "../modals/index.js";
 
 const foodImages = [
   Burger,
