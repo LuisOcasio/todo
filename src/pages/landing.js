@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Nav from "../components/Nav";
 import MenuNav from "../components/MenuNav";
-import Items from "../components/Items";
+import Items from "../components/items/Items";
+import Drinks from "../components/items/Drinks";
 import Footer from "../components/Footer";
 import Flag from "../components/Flag";
 
@@ -12,6 +13,7 @@ const landing = () => {
       <MenuNav />
       <Flag />
       <Items />
+      <Drinks />
       <Footer />
     </Wrapper>
   );
