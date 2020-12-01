@@ -3,6 +3,12 @@ import { exclude } from "../../data/index.js";
 
 const excludeList = Object.values(exclude);
 
+const excludeItem = (event, { value }) => {
+  console.log("removed item", value);
+  // let remove = event.target.textContent;
+  // console.log(remove);
+};
+
 const Remove = (props) => {
   return (
     <Dropdown
@@ -17,6 +23,7 @@ const Remove = (props) => {
       multiple
       selection
       options={excludeList[props.slot]}
+      onChange={excludeItem}
     />
   );
 };
